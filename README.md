@@ -1,9 +1,6 @@
 # Simple-Twitter--Node.js
 This repository contains Twitter like app made in node.js and express.js.
 
-## demo video link:
-- https://drive.google.com/file/d/1Y282iNtvc7gUqp9QSXC_AueD0GCFajdu/view?usp=sharing
-
 ## Features:
 1. can create posts.
 2. can reply and like-dislike posts.
@@ -13,6 +10,9 @@ This repository contains Twitter like app made in node.js and express.js.
 6. Explore page - posts of all users.
 - Facebook Passport, Twitter Passport, Local Passport startegies integrated
 - Session and Cookie handeling.
+
+## demo video link:
+- https://drive.google.com/file/d/1Y282iNtvc7gUqp9QSXC_AueD0GCFajdu/view?usp=sharing
 
 ## How To Run This App:
 1. Download or git clone this repository
