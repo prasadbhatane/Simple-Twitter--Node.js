@@ -1,0 +1,240 @@
+html, body{
+    background: linear-gradient(to right, rgb(87, 145, 211), rgb(64, 204, 162));
+    margin: 0px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.opening-page{
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 150px;
+    margin-left: 350px;
+    text-align: center;
+    padding: 40px;
+    width: 400px;
+}
+.opening-page button{
+    font-size: 20px;
+    width: 100px;
+
+}
+
+.loging-page{
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 100px;
+    margin-left: 250px;
+    text-align: center;
+    padding: 20px;
+    width: 700px;
+}
+.loging-page button, .loging-page input{
+    font-size: 15px;
+    width: 250px;
+
+}
+
+.main-home{
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    height: 100vh;
+}
+
+.home-col1{
+    border: 1px solid white;
+    text-align: center;
+} 
+
+.home-col2{
+    border: 1px solid white;
+}
+
+.home-col3{
+    border: 1px solid white;
+}
+
+.main-home .home-col1 a button{
+    margin-top: 25px;
+    height: 10vh;
+    width: 10vh;
+    font-size: 5vh;
+    border: 3px solid white;
+    border-radius: 10vh;
+
+}
+
+.main-home .home-col1 a button:hover{
+    background: cornflowerblue;
+    border: 3px solid black;
+}
+
+.home-col2-row1{
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.home-col2-row2{
+    height: 540px;
+    overflow-y: scroll;
+}
+.home-col2-row2-posts{
+    height: 380px;
+    overflow-y: scroll;
+}
+.home-col2-row1 h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.create-form{
+    text-align: center;
+}
+
+.post-card{
+    border: 2px solid black;
+    width: 55vw;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.post-card-row1{
+    display: grid;
+    grid-template-columns: 1fr 10fr 3fr;
+    /* border: 1px solid black; */
+}
+
+.post-card-row1-col1{
+    margin-left: 10px;
+    font-size: 50px;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    width: 40px;
+    margin-bottom: 0px;
+}
+
+.post-card-row1-col2 h3, .post-card-row1-col2 div{
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.post-card-row2{
+    padding: 10px;
+}
+
+.post-card-row3{
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.post-card-row3 a{
+    margin-right: 80px;
+}
+
+.reply-box{
+    text-align: center;
+    border: 2px solid black;
+    width: 55vw;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#search-username{
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 250px;
+    font-size: 20px;
+}
+#search-btn{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 30px;
+    font-size: 20px;
+}
+.home-col3{
+    text-align: center;
+}
+
+.home-col3 h3{
+    margin-top: 7px;
+    border-bottom: 2px solid white;
+}
+
+ul{
+    list-style: none;
+}
+
+.user-tile{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+.user-tile i, .user-tile a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+}
+.user-tile button{
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    float: right;
+}
+.user-list-box{
+    height: 140px;
+    overflow-y: scroll;
+}
+
+table{
+    margin: 20px;
+    width: 90%;
+    text-align: center;
+    font-size: medium;
+}
+
+.posts-btn, .followers-btn, .followings-btn{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-left: 50px;
+}
+
+.red{
+    color: crimson;
+    font-size: 20px;
+}
+.blue{
+    color: darkblue;
+    font-size: 20px;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+width: 5px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px rgb(40, 201, 161); 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(30, 106, 156); 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #236c9c; 
+}

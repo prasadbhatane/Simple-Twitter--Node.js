@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main-home">
+        <div class="home-col1">
+            <a href=""><button><i class="fa fa-product-hunt"></i></button></a><br>
+            <a href="/home"><button id="home-btn"><i class="fa fa-home"></i></button></a><br>
+            <a href="/explore"><button id="explore-btn"><i class="fa fa-hashtag"></i></button></a><br>
+            <a href="/profile/{{user._id}}"><button id="myprofile-btn"><i class="fa fa-user"></i></button></a><br>
+            <a href="/create"><button id="create-btn"><i class="fa fa-plus-circle"></i></button></a><br>
+            <a href="/logout"><button id="logout-btn"><i class="fa fa-sign-out"></i></button></a>
+        </div>
+        <div class="home-col2">
+            <div class="home-col2-row1"><h2>{{profile.username}}</h2></div>
+            <div>
+                <table>
+                    <tr>
+                        <th>Email</th>
+                        <th>Followers</th>
+                        <th>Followings</th>
+                    </tr>
+                    <tr>
+                        <td>{{profile.email}}</td>
+                        <td>{{profile.followersList.length}}</td>
+                        <td>{{profile.followingsList.length}}</td>
+                    </tr>
+                </table>
+                <hr>
+                <a href="/posts/{{profile._id}}"><button class="posts-btn">Posts</button></a>
+                <a href="/followers/{{profile._id}}"><button class="followers-btn">Followers</button></a>
+                <a href="/followings/{{profile._id}}"><button class="followings-btn">Followings</button></a>
+                <hr>
+            </div>
+            <div class="home-col2-row2">
+                <ul class="profile-followings-lists">
+                    {{#each fList as |f|}}
+                        <li>
+                            <div class="user-tile">
+                                <i class="fa fa-user"></i>
+                                <a href="/profile/{{f._id}}">{{f.username}}</a>
+                                <a href="/api/unfollow/{{f._id}}"><button class="unfollow-btn">Unfollow</button></a>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="home-col3">
+            <h3>Suggested Users</h3>
+            <div class="user-list-box">
+                <ul class="user-list">
+                    <li class="user-tile">
+                        <a href="/{{username}}">username</a>
+                        <button id="fbtn">Follow</button>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p>P-Twitter : By Prasad Bhatane</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/profilescript.js"></script>
+</body>
+</html>

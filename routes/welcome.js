@@ -1,0 +1,18 @@
+const route = require('express').Router()
+const User = require('../models/user')
+
+//////////////////////////////////////////////////////////////////////////////////
+
+// Get '/'
+route.get('/',(req,res)=>{
+    if(req.user){
+        res.redirect('/home')
+    }
+    return res.render('welcome')
+})
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module.exports = route
