@@ -22,8 +22,8 @@ passport.use(new LocalStrategy(
 //////////////////////////////////////////////////////////////////////////////////
 
 passport.use(new FacebookStrategy({
-    clientID: '698996887475484',
-    clientSecret: 'cc86616542e5553bdbfccc2a1ba0a078',
+    clientID: 'Add your own client ID',
+    clientSecret: 'Add your own client secret',
     callbackURL: "http://localhost:4444/login/facebook/callback",
     profileFields: ['id', 'email', 'name', 'displayName']
   },
@@ -40,8 +40,8 @@ passport.use(new FacebookStrategy({
 //////////////////////////////////////////////////////////////////////////////////
 
 passport.use(new TwitterStrategy({
-    consumerKey: "qMPrYbWYqPpsHXX1iZE3A2ytz",
-    consumerSecret: "K6MwCJFpU7gKaQ8xT8dNx7elQqVhhQvKoir8bvznFoODJalPrQ",
+    consumerKey: "Add your own consumer key",
+    consumerSecret: "Add your own consumer secret",
     callbackURL: "http://localhost:4444/login/twitter/callback",
     userProfileURL  : 'https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true',
     profileFields: ['id', 'emails', 'name']
