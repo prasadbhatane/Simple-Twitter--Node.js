@@ -8,8 +8,8 @@ This repository contains Twitter like app made in node.js and express.js.
 4. can see followings and followers of users.
 5. Home page - posts of followings.
 6. Explore page - posts of all users.
-- Facebook Passport, Twitter Passport, Local Passport startegies integrated
-- Session and Cookie handeling.
+- Facebook Passport, Twitter Passport, Local Passport strategies integrated
+- Session and Cookie handling.
 
 ## demo video link:
 - https://drive.google.com/file/d/1Y282iNtvc7gUqp9QSXC_AueD0GCFajdu/view?usp=sharing
